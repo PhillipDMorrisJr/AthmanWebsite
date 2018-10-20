@@ -16,7 +16,7 @@
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell>
-                    <asp:RadioButtonList ID="rblService" runat="server" AutoPostBack="True">
+                    <asp:RadioButtonList ID="rblService" runat="server">
                         <asp:ListItem Value="1">Satisfied</asp:ListItem>
                         <asp:ListItem Value="2">Neither</asp:ListItem>
                         <asp:ListItem Value="3">Dissatisfied</asp:ListItem>
@@ -31,7 +31,7 @@
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell>
-                    <asp:RadioButtonList ID="rblEfficiency" runat="server" AutoPostBack="True">
+                    <asp:RadioButtonList ID="rblEfficiency" runat="server">
                         <asp:ListItem Value="1">Satisfied</asp:ListItem>
                         <asp:ListItem Value="2">Neither</asp:ListItem>
                         <asp:ListItem Value="3">Dissatisfied</asp:ListItem>
@@ -46,7 +46,7 @@
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell>
-                    <asp:RadioButtonList ID="rblProblem" runat="server" AutoPostBack="True">
+                    <asp:RadioButtonList ID="rblProblem" runat="server">
                         <asp:ListItem Value="1">Satisfied</asp:ListItem>
                         <asp:ListItem Value="2">Neither</asp:ListItem>
                         <asp:ListItem Value="3">Dissatisfied</asp:ListItem>
@@ -71,7 +71,7 @@
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell>
-                    <asp:RadioButtonList ID="rblContact" runat="server" Enabled="False" AutoPostBack="True">
+                    <asp:RadioButtonList ID="rblContact" runat="server" Enabled="False">
                         <asp:ListItem>Email</asp:ListItem>
                         <asp:ListItem>Phone</asp:ListItem>
                     </asp:RadioButtonList>

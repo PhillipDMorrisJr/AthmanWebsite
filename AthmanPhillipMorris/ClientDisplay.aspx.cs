@@ -36,7 +36,7 @@ namespace AthmanPhillipMorris
             }
 
             this.lblContactAdded.Text = string.Empty;
-            this.selectedClient = this.GetSelectedClient();
+            this.selectedClient = this.getSelectedClient();
             this.lblName.Text = this.selectedClient.Name;
             this.lblAddress.Text = this.selectedClient.Address;
             this.lblCity.Text = this.selectedClient.City;
@@ -44,7 +44,6 @@ namespace AthmanPhillipMorris
             this.lblZipcode.Text = this.selectedClient.Zipcode;
             this.lblEmail.Text = this.selectedClient.Email;
             this.lblPhone.Text = this.selectedClient.Phone;
-
         }
 
         /// <summary>
@@ -54,7 +53,7 @@ namespace AthmanPhillipMorris
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void Onselection_Changed(object sender, EventArgs e)
         {
-            HttpContext.Current.Session["Client"] = this.GetSelectedClient();
+            HttpContext.Current.Session["Client"] = this.getSelectedClient();
 
         }
 
@@ -62,7 +61,7 @@ namespace AthmanPhillipMorris
         /// Gets the selected client.
         /// </summary>
         /// <returns></returns>
-        private Client GetSelectedClient()
+        private Client getSelectedClient()
         {
             DataView clientsTable = (DataView)this.sdsClients.Select(DataSourceSelectArguments.Empty);
             if (clientsTable == null)
@@ -103,8 +102,6 @@ namespace AthmanPhillipMorris
             }
             
         }
-
-
 
         /// <summary>
         /// Handles the Click event of the ViewContacts control.
